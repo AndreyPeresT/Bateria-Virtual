@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, lightblue, rgb(102, 102, 255));
+    background-size: 200% 200%;
+    animation: backgroundAnimation 10s linear infinite;
+}   
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0%;
+    }
+
+    50%{
+        background-position: 100%;
+    }
+    
+    100% {
+        background-position: 0%;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.title {
+    margin-bottom: 200px;
+    font-size: 120px;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 4px 1px 3px whitesmoke;
+    text-align: center;
+}
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bateria {
+    height: 175px;
+    width: 175px;
+    margin: 15px;
+    border-radius: 20px;
+    border: none;
+    outline: 10px solid black;
+    font-size: 100px;
+    color: rgba(0, 0, 0, 0.36);
+    text-transform: uppercase;
+}
+
+/* Imagens botões */
+
+.a {
+    background-image: url(images/crash.png);
+    background-size: cover;
+}
+
+.s {
+    background-image: url(images/kick.png);
+    background-size: cover;
+}
+
+.d {
+    background-image: url(images/snare.png);
+    background-size: cover;
+}
+
+.f {
+    background-image: url(images/tom1.png);
+    background-size: cover;
+}
+
+.j {
+    background-image: url(images/tom2.png);
+    background-size: cover;
+}
+
+.k {
+    background-image: url(images/tom3.png);
+    background-size: cover;
+}
+
+.l {
+    background-image: url(images/tom4.png);
+    background-size: cover;
+}
+
+/* Animação Botão Apertado */
+
+.aniPress {
+    box-shadow: 0px 0px 10px 15px white;
+    opacity: 0.8;
+}
